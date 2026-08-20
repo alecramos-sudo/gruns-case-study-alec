@@ -1,0 +1,161 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "743e42d3964da8d26659b7bcf96e83d6"
+application_url = "https://example.com"
+embedded = true
+name = "Grüns Intent"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_products,read_orders,read_metaobjects,read_metaobject_definitions,write_metaobjects,read_pixels,write_pixels,read_customer_events,read_reports,read_analytics_annotations,write_analytics_annotations"
+
+[metaobjects.app.merchandising_profile]
+name = "Merchandising profile"
+display_name_field = "name"
+access.admin = "merchant_read_write"
+
+  [metaobjects.app.merchandising_profile.fields.name]
+  name = "Name"
+  type = "single_line_text_field"
+  required = true
+
+  [metaobjects.app.merchandising_profile.fields.product]
+  name = "Product"
+  type = "product_reference"
+  required = true
+
+  [metaobjects.app.merchandising_profile.fields.role]
+  name = "Offer role"
+  type = "single_line_text_field"
+  required = true
+
+  [metaobjects.app.merchandising_profile.fields.audiences]
+  name = "Audiences"
+  type = "list.single_line_text_field"
+  required = true
+
+  [metaobjects.app.merchandising_profile.fields.family]
+  name = "Product family"
+  type = "single_line_text_field"
+  required = true
+
+  [metaobjects.app.merchandising_profile.fields.substitution_group]
+  name = "Substitution group"
+  type = "single_line_text_field"
+
+  [metaobjects.app.merchandising_profile.fields.lifecycle]
+  name = "Lifecycle"
+  type = "single_line_text_field"
+  required = true
+
+  [metaobjects.app.merchandising_profile.fields.claims]
+  name = "Approved claims"
+  type = "list.single_line_text_field"
+
+  [metaobjects.app.merchandising_profile.fields.exclusions]
+  name = "Exclusion rules"
+  type = "list.single_line_text_field"
+  required = true
+
+  [metaobjects.app.merchandising_profile.fields.merchant_priority]
+  name = "Merchant priority"
+  type = "number_integer"
+  required = true
+
+  [metaobjects.app.merchandising_profile.fields.eligible]
+  name = "Eligible for offers"
+  type = "boolean"
+  required = true
+
+[metaobjects.app.offer_relation]
+name = "Offer relation"
+display_name_field = "name"
+access.admin = "merchant_read_write"
+
+  [metaobjects.app.offer_relation.fields.name]
+  name = "Name"
+  type = "single_line_text_field"
+  required = true
+
+  [metaobjects.app.offer_relation.fields.source_profile]
+  name = "Source profile"
+  type = "metaobject_reference<$app:merchandising_profile>"
+  required = true
+
+  [metaobjects.app.offer_relation.fields.target_profile]
+  name = "Target profile"
+  type = "metaobject_reference<$app:merchandising_profile>"
+
+  [metaobjects.app.offer_relation.fields.action_key]
+  name = "Action key"
+  type = "single_line_text_field"
+
+  [metaobjects.app.offer_relation.fields.relationship]
+  name = "Relationship"
+  type = "single_line_text_field"
+  required = true
+
+  [metaobjects.app.offer_relation.fields.base_weight]
+  name = "Pairing priority"
+  type = "number_integer"
+  required = true
+
+  [metaobjects.app.offer_relation.fields.rationale]
+  name = "Rationale"
+  type = "multi_line_text_field"
+  required = true
+
+  [metaobjects.app.offer_relation.fields.active]
+  name = "Active"
+  type = "boolean"
+  required = true
+
+  [metaobjects.app.offer_relation.fields.max_discount]
+  name = "Offer discount"
+  type = "number_decimal"
+  required = true
+
+  [metaobjects.app.offer_relation.fields.required_signals]
+  name = "Required signals"
+  type = "list.single_line_text_field"
+
+[metaobjects.app.ranking_policy]
+name = "Ranking policy"
+display_name_field = "name"
+access.admin = "merchant_read_write"
+
+  [metaobjects.app.ranking_policy.fields.name]
+  name = "Name"
+  type = "single_line_text_field"
+  required = true
+
+  [metaobjects.app.ranking_policy.fields.version]
+  name = "Version"
+  type = "number_integer"
+  required = true
+
+  [metaobjects.app.ranking_policy.fields.recently_viewed_weight]
+  name = "Recently viewed weight"
+  type = "number_integer"
+  required = true
+
+[webhooks]
+api_version = "2026-07"
+
+  [[webhooks.subscriptions]]
+  uri = "/webhooks/app/uninstalled"
+  topics = [ "app/uninstalled" ]
+
+  [[webhooks.subscriptions]]
+  uri = "/webhooks/app/scopes_update"
+  topics = [ "app/scopes_update" ]
+
+  [[webhooks.subscriptions]]
+  uri = "/webhooks/compliance"
+  compliance_topics = [ "customers/data_request", "customers/redact", "shop/redact" ]
+
+[auth]
+redirect_urls = [ "https://example.com/auth/callback" ]
+
+[build]
+automatically_update_urls_on_dev = true

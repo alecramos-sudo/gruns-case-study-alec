@@ -1,0 +1,9 @@
+ALTER TABLE "OfferDecision" ADD COLUMN "feedbackChoice" TEXT;
+ALTER TABLE "OfferDecision" ADD COLUMN "feedbackText" TEXT;
+
+ALTER TABLE "AiDailyUsage" ADD COLUMN "inputTokens" INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE "AiDailyUsage" ADD COLUMN "cachedInputTokens" INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE "AiDailyUsage" ADD COLUMN "outputTokens" INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE "AiDailyUsage" ADD COLUMN "estimatedCostUsd" REAL NOT NULL DEFAULT 0;
+ALTER TABLE "AiDailyUsage" ADD COLUMN "lastProvider" TEXT;
+ALTER TABLE "AiDailyUsage" ADD COLUMN "lastModel" TEXT;

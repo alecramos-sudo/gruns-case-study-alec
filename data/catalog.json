@@ -1,0 +1,926 @@
+{
+  "capturedAt": "2026-08-19T17:33:28.972Z",
+  "liveSource": "https://gruns.co/products.json?limit=250",
+  "products": [
+    {
+      "sourceType": "real-mirror",
+      "sourceUrl": "https://gruns.co/products/minions-gruns-kids",
+      "title": "Grüns Kids Minions",
+      "handle": "minions-gruns-kids",
+      "descriptionHtml": "<p>Comprehensive daily nutrition in each life-hack snack pack of gummies. With 60 nutrient-dense ingredients, meeting your daily nutrient needs, supporting gut health, and promoting whole-body vitality has never been so easy.</p>",
+      "vendor": "Grüns",
+      "productType": "Daily Nutrition",
+      "tags": ["kids", "may_lto26", "primary", "case-study-real-mirror"],
+      "options": [
+        {
+          "name": "Sugar",
+          "values": ["Low Sugar", "Sugar-Free"]
+        },
+        {
+          "name": "Size",
+          "values": ["28 Packs", "84 Packs"]
+        }
+      ],
+      "variants": [
+        {
+          "optionValues": ["Low Sugar", "28 Packs"],
+          "sku": "335001",
+          "price": "57.05",
+          "compareAtPrice": "57.05",
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Low Sugar", "84 Packs"],
+          "sku": "335002",
+          "price": "171.15",
+          "compareAtPrice": "171.15",
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Sugar-Free", "28 Packs"],
+          "sku": "335003",
+          "price": "57.05",
+          "compareAtPrice": "57.05",
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Sugar-Free", "84 Packs"],
+          "sku": "335004",
+          "price": "171.15",
+          "compareAtPrice": "171.15",
+          "inventoryQuantity": 100
+        }
+      ],
+      "image": {
+        "source": "https://cdn.shopify.com/s/files/1/0550/9614/8034/files/LTO-Minions-Kids-LS-1Prod.webp?v=1784664959",
+        "alt": "Grüns Kids Minions"
+      }
+    },
+    {
+      "sourceType": "real-mirror",
+      "sourceUrl": "https://gruns.co/products/minions-gruns",
+      "title": "Grüns Minions",
+      "handle": "minions-gruns",
+      "descriptionHtml": "<p>Comprehensive daily nutrition in each life-hack snack pack of gummies. With 60 nutrient-dense ingredients, meeting your daily nutrient needs, supporting gut health, and promoting whole-body vitality has never been so easy.</p>",
+      "vendor": "Grüns",
+      "productType": "Daily Nutrition",
+      "tags": ["adult", "primary", "case-study-real-mirror"],
+      "options": [
+        {
+          "name": "Sugar",
+          "values": ["Low Sugar", "Sugar-Free"]
+        },
+        {
+          "name": "Size",
+          "values": ["28 Packs", "84 Packs"]
+        }
+      ],
+      "variants": [
+        {
+          "optionValues": ["Low Sugar", "28 Packs"],
+          "sku": "335005",
+          "price": "70.38",
+          "compareAtPrice": "70.38",
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Low Sugar", "84 Packs"],
+          "sku": "335006",
+          "price": "211.14",
+          "compareAtPrice": "211.14",
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Sugar-Free", "28 Packs"],
+          "sku": "335007",
+          "price": "77.05",
+          "compareAtPrice": "77.05",
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Sugar-Free", "84 Packs"],
+          "sku": "335008",
+          "price": "231.15",
+          "compareAtPrice": "231.15",
+          "inventoryQuantity": 100
+        }
+      ],
+      "image": {
+        "source": "https://cdn.shopify.com/s/files/1/0550/9614/8034/files/LTO-Minions-Adults-LS-1Prod.webp?v=1784664959",
+        "alt": "Grüns Minions"
+      }
+    },
+    {
+      "sourceType": "real-mirror",
+      "sourceUrl": "https://gruns.co/products/gruns-retro-washed-fleece-hoodie",
+      "title": "The Bodega Hüdie",
+      "handle": "gruns-retro-washed-fleece-hoodie",
+      "descriptionHtml": "<p>Material Finished with a snow-wash treatment, this hoodie offers a naturally worn-in look, ensuring each piece carries its own one-of-a-kind texture. The ultra-soft fleece lining delivers a smooth feel and cozy warmth against the skin. With its structured drape and comfortable fit, it serves as an easy, versatile choice for relaxed styling and everyday layering. Material: 38% Cotton, 57% Polyester, 5% Other Fibers Fabric weight: 360gsm, 10.6oz/yd² Size Guide SizeTable (CM) Size Length Chest Width S 68 64 58 M 70 66 60 L 72 68 62 XL 74 70 64 2XL 76 72 66 This data was obtained from manually measuring the product, it may be off by 1-2CM SizeTable (IN) Size Length Chest Width S 26.8 25.2 22.8 M 27.6 26.0 23.6 L 28.3 26.8 24.4 XL 29.1 27.6 25.2 2XL 29.9 28.3 26.0</p>",
+      "vendor": "Grüns",
+      "productType": "Merch",
+      "tags": ["merch", "case-study-real-mirror"],
+      "options": [
+        {
+          "name": "Color",
+          "values": ["Green"]
+        },
+        {
+          "name": "Size",
+          "values": ["S", "M", "L", "XL", "2XL"]
+        }
+      ],
+      "variants": [
+        {
+          "optionValues": ["Green", "S"],
+          "sku": "230100126791084",
+          "price": "45.49",
+          "compareAtPrice": null,
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Green", "M"],
+          "sku": "230100126791086",
+          "price": "45.49",
+          "compareAtPrice": null,
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Green", "L"],
+          "sku": "230100126791087",
+          "price": "45.49",
+          "compareAtPrice": null,
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Green", "XL"],
+          "sku": "230100126791089",
+          "price": "45.49",
+          "compareAtPrice": null,
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Green", "2XL"],
+          "sku": "230100126791090",
+          "price": "45.49",
+          "compareAtPrice": null,
+          "inventoryQuantity": 100
+        }
+      ],
+      "image": {
+        "source": "https://cdn.shopify.com/s/files/1/0550/9614/8034/files/hoodie-adults1-front.webp?v=1781206275",
+        "alt": "The Bodega Hüdie"
+      }
+    },
+    {
+      "sourceType": "real-mirror",
+      "sourceUrl": "https://gruns.co/products/gruns-ecosoft-cotton-lyocell-midweight-tee",
+      "title": "The Call Me Tee",
+      "handle": "gruns-ecosoft-cotton-lyocell-midweight-tee",
+      "descriptionHtml": "<p>Material Made from an 80/20 cotton-lyocell blend to balance a structured weight with a soft, cooling touch. This midweight fabric is designed to hold its shape well, resisting stretching and warping through daily wear. With a tailored silhouette, it provides a clean, natural drape and maintains a sharp, modern fit with every movement. Material: 80% Cotton, 20% Lyocell Fabric weight: 250gsm, 7.4oz/yd² Size Guide SizeTable (CM) Size Length Chest Width S 66 55 46 M 68 57 48 L 70 59 49 XL 72 61 51 2XL 74 63 52 This data was obtained from manually measuring the product, it may be off by 1-2CM SizeTable (IN) Size Length Chest Width S 26.0 21.7 18.1 M 26.8 22.4 18.9 L 27.6 23.2 19.3 XL 28.3 24.0 20.1 2XL 29.1 24.8 20.5</p>",
+      "vendor": "Grüns",
+      "productType": "Merch",
+      "tags": ["merch", "case-study-real-mirror"],
+      "options": [
+        {
+          "name": "Color",
+          "values": ["Black"]
+        },
+        {
+          "name": "Size",
+          "values": ["S", "M", "L", "XL", "2XL"]
+        }
+      ],
+      "variants": [
+        {
+          "optionValues": ["Black", "S"],
+          "sku": "230100126788313",
+          "price": "25.99",
+          "compareAtPrice": null,
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Black", "M"],
+          "sku": "230100126788315",
+          "price": "25.99",
+          "compareAtPrice": null,
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Black", "L"],
+          "sku": "230100126788317",
+          "price": "25.99",
+          "compareAtPrice": null,
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Black", "XL"],
+          "sku": "230100126788319",
+          "price": "25.99",
+          "compareAtPrice": null,
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Black", "2XL"],
+          "sku": "230100126788321",
+          "price": "25.99",
+          "compareAtPrice": null,
+          "inventoryQuantity": 100
+        }
+      ],
+      "image": {
+        "source": "https://cdn.shopify.com/s/files/1/0550/9614/8034/files/shirt-adult2-back.webp?v=1781206275",
+        "alt": "The Call Me Tee"
+      }
+    },
+    {
+      "sourceType": "real-mirror",
+      "sourceUrl": "https://gruns.co/products/gruns-spacious-canvas-tote-with-color-zipper-pocket",
+      "title": "Grüns Bodega Tote",
+      "handle": "gruns-spacious-canvas-tote-with-color-zipper-pocket",
+      "descriptionHtml": "<p>Material Crafted from sturdy, unbleached cotton canvas, this tote bag holds its natural shape perfectly for all your everyday carry needs. The wide front panel offers a clean, generous space for bold prints or logos, while the interior features a secure inner pocket with a contrast colored zipper. Finished with robust shoulder straps, it delivers an everyday accessory with a structured, artisanal character. Material: 100% Cotton Size Guide SizeTable (CM) Size Height Width F 38 43 This data was obtained from manually measuring the product, it may be off by 1-2CM SizeTable (IN) Size Height Width F 15.0 16.9</p>",
+      "vendor": "Grüns",
+      "productType": "Merch",
+      "tags": ["merch", "case-study-real-mirror"],
+      "options": [
+        {
+          "name": "Color",
+          "values": ["White"]
+        }
+      ],
+      "variants": [
+        {
+          "optionValues": ["White"],
+          "sku": "230100126788311",
+          "price": "36.99",
+          "compareAtPrice": null,
+          "inventoryQuantity": 100
+        }
+      ],
+      "image": {
+        "source": "https://cdn.shopify.com/s/files/1/0550/9614/8034/files/726abf5749adec613841bf198c653e4d.png?v=1783611303",
+        "alt": "Grüns Bodega Tote"
+      }
+    },
+    {
+      "sourceType": "real-mirror",
+      "sourceUrl": "https://gruns.co/products/gruns-kids-cozy-fleece-hoodie",
+      "title": "The Kids Hüdie",
+      "handle": "gruns-kids-cozy-fleece-hoodie",
+      "descriptionHtml": "<p>Material This hoodie features a smooth cotton exterior and a cozy fleece interior for soft, comfortable warmth. The relaxed fit makes it easy to layer in cooler weather while staying gentle against the skin. Material: 42% Cotton, 53% Polyester, 5% Other Fabric weight: 350gsm, 10.3oz/yd² Size Guide SizeTable (CM) Size Length Chest Width Sleeve XS 44 45 41 40 S 49 48 45 45 M 54 52 48 50 L 58 55 52 55 XL 62 58 55 58 This data was obtained from manually measuring the product, it may be off by 1-2CM SizeTable (IN) Size Length Chest Width Sleeve XS 17.3 17.7 16.1 15.7 S 19.3 18.9 17.7 17.7 M 21.3 20.5 18.9 19.7 L 22.8 21.7 20.5 21.7 XL 24.4 22.8 21.7 22.8</p>",
+      "vendor": "Grüns",
+      "productType": "Merch",
+      "tags": ["merch", "case-study-real-mirror"],
+      "options": [
+        {
+          "name": "Color",
+          "values": ["Dark Green"]
+        },
+        {
+          "name": "Size",
+          "values": ["XS", "S", "M", "L", "XL"]
+        }
+      ],
+      "variants": [
+        {
+          "optionValues": ["Dark Green", "XS"],
+          "sku": "230100126791092",
+          "price": "30.99",
+          "compareAtPrice": null,
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Dark Green", "S"],
+          "sku": "230100126791093",
+          "price": "30.99",
+          "compareAtPrice": null,
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Dark Green", "M"],
+          "sku": "230100126791095",
+          "price": "30.99",
+          "compareAtPrice": null,
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Dark Green", "L"],
+          "sku": "230100126791096",
+          "price": "30.99",
+          "compareAtPrice": null,
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Dark Green", "XL"],
+          "sku": "230100126791098",
+          "price": "30.99",
+          "compareAtPrice": null,
+          "inventoryQuantity": 100
+        }
+      ],
+      "image": {
+        "source": "https://cdn.shopify.com/s/files/1/0550/9614/8034/files/hoodie-kids1-front.webp?v=1781206275",
+        "alt": "The Kids Hüdie"
+      }
+    },
+    {
+      "sourceType": "real-mirror",
+      "sourceUrl": "https://gruns.co/products/gruns-logo-hat",
+      "title": "Grüns Trucker Hat",
+      "handle": "gruns-logo-hat",
+      "descriptionHtml": "<p>Material A timeless two-tone baseball cap inspired by classic American sportswear. The structured 5-panel design maintains a clean, defined shape, while the contrasting brim adds a subtle vintage-inspired character. An adjustable back closure provides a comfortable, easy fit. Finished with premium embroidery on both the front and side panels, this everyday essential brings together refined craftsmanship and effortless style. Material: 100% Cotton Size Guide SizeTable (CM) Size A B C D F 58 12 7.5 12.5 This data was obtained from manually measuring the product, it may be off by 1-2CM SizeTable (IN) Size A B C D F 22.8 4.7 3.0 4.9</p>",
+      "vendor": "Grüns",
+      "productType": "Merch",
+      "tags": ["merch", "case-study-real-mirror"],
+      "options": [
+        {
+          "name": "Color",
+          "values": ["Natural / Forest Green"]
+        },
+        {
+          "name": "Size",
+          "values": ["F"]
+        }
+      ],
+      "variants": [
+        {
+          "optionValues": ["Natural / Forest Green", "F"],
+          "sku": "230100126790449",
+          "price": "25.99",
+          "compareAtPrice": null,
+          "inventoryQuantity": 100
+        }
+      ],
+      "image": {
+        "source": "https://cdn.shopify.com/s/files/1/0550/9614/8034/files/445a1092246d940eb1118e5d950e0674.png?v=1782151604",
+        "alt": "Grüns Trucker Hat"
+      }
+    },
+    {
+      "sourceType": "real-mirror",
+      "sourceUrl": "https://gruns.co/products/gruns-good-greens-club-hat",
+      "title": "Good Greens Club Hat",
+      "handle": "gruns-good-greens-club-hat",
+      "descriptionHtml": "<p>Material A timeless two-tone baseball cap inspired by classic American sportswear. The structured 5-panel design maintains a clean, defined shape, while the contrasting brim adds a subtle vintage-inspired character. An adjustable back closure provides a comfortable, easy fit. Finished with premium embroidery on both the front and side panels, this everyday essential brings together refined craftsmanship and effortless style. Material: 100% Cotton Size Guide SizeTable (CM) Size A B C D F 58 12 7.5 12.5 This data was obtained from manually measuring the product, it may be off by 1-2CM SizeTable (IN) Size A B C D F 22.8 4.7 3.0 4.9</p>",
+      "vendor": "Grüns",
+      "productType": "Merch",
+      "tags": ["merch", "case-study-real-mirror"],
+      "options": [
+        {
+          "name": "Color",
+          "values": ["Natural / Forest Green"]
+        },
+        {
+          "name": "Size",
+          "values": ["F"]
+        }
+      ],
+      "variants": [
+        {
+          "optionValues": ["Natural / Forest Green", "F"],
+          "sku": "230100126790457",
+          "price": "25.99",
+          "compareAtPrice": null,
+          "inventoryQuantity": 100
+        }
+      ],
+      "image": {
+        "source": "https://cdn.shopify.com/s/files/1/0550/9614/8034/files/59ce189133e36b74229c74fc8a0bbba5.png?v=1782151609",
+        "alt": "Good Greens Club Hat"
+      }
+    },
+    {
+      "sourceType": "real-mirror",
+      "sourceUrl": "https://gruns.co/products/raspberry-lemonade-gruns",
+      "title": "Grüns Raspberry Lemonade",
+      "handle": "raspberry-lemonade-gruns",
+      "descriptionHtml": "<p>Comprehensive daily nutrition in each life-hack snack pack of gummies. With 60 nutrient-dense ingredients, meeting your daily nutrient needs, supporting gut health, and promoting whole-body vitality has never been so easy.</p>",
+      "vendor": "Grüns",
+      "productType": "Daily Nutrition",
+      "tags": ["adult", "primary", "case-study-real-mirror"],
+      "options": [
+        {
+          "name": "Sugar",
+          "values": ["Low Sugar", "Sugar-Free"]
+        },
+        {
+          "name": "Size",
+          "values": ["28 Packs", "84 Packs"]
+        }
+      ],
+      "variants": [
+        {
+          "optionValues": ["Low Sugar", "28 Packs"],
+          "sku": "334001",
+          "price": "70.38",
+          "compareAtPrice": "70.38",
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Low Sugar", "84 Packs"],
+          "sku": "334003",
+          "price": "211.14",
+          "compareAtPrice": "211.14",
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Sugar-Free", "28 Packs"],
+          "sku": "334002",
+          "price": "77.05",
+          "compareAtPrice": "77.05",
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Sugar-Free", "84 Packs"],
+          "sku": "334004",
+          "price": "231.15",
+          "compareAtPrice": "231.15",
+          "inventoryQuantity": 100
+        }
+      ],
+      "image": {
+        "source": "https://cdn.shopify.com/s/files/1/0550/9614/8034/files/LTO-RL-Adults-LS-1Prod.webp?v=1781636093",
+        "alt": "Grüns Raspberry Lemonade"
+      }
+    },
+    {
+      "sourceType": "real-mirror",
+      "sourceUrl": "https://gruns.co/products/raspberry-lemonade-gruns-kids",
+      "title": "Grüns Kids Raspberry Lemonade",
+      "handle": "raspberry-lemonade-gruns-kids",
+      "descriptionHtml": "<p>Comprehensive daily nutrition in each life-hack snack pack of gummies. With 60 nutrient-dense ingredients, meeting your daily nutrient needs, supporting gut health, and promoting whole-body vitality has never been so easy.</p>",
+      "vendor": "Grüns",
+      "productType": "Daily Nutrition",
+      "tags": ["kids", "may_lto26", "primary", "case-study-real-mirror"],
+      "options": [
+        {
+          "name": "Sugar",
+          "values": ["Low Sugar", "Sugar-Free"]
+        },
+        {
+          "name": "Size",
+          "values": ["28 Packs", "84 Packs"]
+        }
+      ],
+      "variants": [
+        {
+          "optionValues": ["Low Sugar", "28 Packs"],
+          "sku": "334005",
+          "price": "57.05",
+          "compareAtPrice": "57.05",
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Low Sugar", "84 Packs"],
+          "sku": "334007",
+          "price": "171.15",
+          "compareAtPrice": "171.15",
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Sugar-Free", "28 Packs"],
+          "sku": "334006",
+          "price": "57.05",
+          "compareAtPrice": "57.05",
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Sugar-Free", "84 Packs"],
+          "sku": "334008",
+          "price": "171.15",
+          "compareAtPrice": "171.15",
+          "inventoryQuantity": 100
+        }
+      ],
+      "image": {
+        "source": "https://cdn.shopify.com/s/files/1/0550/9614/8034/files/LTO-RL-Kids-LS-1Prod.webp?v=1781641652",
+        "alt": "Grüns Kids Raspberry Lemonade"
+      }
+    },
+    {
+      "sourceType": "real-mirror",
+      "sourceUrl": "https://gruns.co/products/gruns-kids-firecracker",
+      "title": "Popsicle® Firecracker Grüns Kids",
+      "handle": "gruns-kids-firecracker",
+      "descriptionHtml": "<p>Comprehensive daily nutrition in each life-hack snack pack of gummies. With 60 nutrient-dense ingredients, meeting your daily nutrient needs, supporting gut health, and promoting whole-body vitality has never been so easy.</p>",
+      "vendor": "Grüns",
+      "productType": "Daily Nutrition",
+      "tags": ["kids", "may_lto26", "primary", "case-study-real-mirror"],
+      "options": [
+        {
+          "name": "Sugar",
+          "values": ["Low Sugar", "Sugar-Free"]
+        },
+        {
+          "name": "Size",
+          "values": ["28 Packs", "84 Packs"]
+        }
+      ],
+      "variants": [
+        {
+          "optionValues": ["Low Sugar", "28 Packs"],
+          "sku": "333705",
+          "price": "57.05",
+          "compareAtPrice": "57.05",
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Low Sugar", "84 Packs"],
+          "sku": "333707",
+          "price": "171.15",
+          "compareAtPrice": "171.15",
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Sugar-Free", "28 Packs"],
+          "sku": "333706",
+          "price": "57.05",
+          "compareAtPrice": "57.05",
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Sugar-Free", "84 Packs"],
+          "sku": "333708",
+          "price": "171.15",
+          "compareAtPrice": "171.15",
+          "inventoryQuantity": 100
+        }
+      ],
+      "image": {
+        "source": "https://cdn.shopify.com/s/files/1/0550/9614/8034/files/firecracker_kids_ls_28.webp?v=1783010499",
+        "alt": "Popsicle® Firecracker Grüns Kids"
+      }
+    },
+    {
+      "sourceType": "real-mirror",
+      "sourceUrl": "https://gruns.co/products/gruns-firecracker",
+      "title": "Popsicle® Firecracker Grüns",
+      "handle": "gruns-firecracker",
+      "descriptionHtml": "<p>Comprehensive daily nutrition in each life-hack snack pack of gummies. With 60 nutrient-dense ingredients, meeting your daily nutrient needs, supporting gut health, and promoting whole-body vitality has never been so easy.</p>",
+      "vendor": "Grüns",
+      "productType": "Daily Nutrition",
+      "tags": ["adult", "may_lto26", "primary", "case-study-real-mirror"],
+      "options": [
+        {
+          "name": "Sugar",
+          "values": ["Low Sugar", "Sugar-Free"]
+        },
+        {
+          "name": "Size",
+          "values": ["28 Packs", "84 Packs"]
+        }
+      ],
+      "variants": [
+        {
+          "optionValues": ["Low Sugar", "28 Packs"],
+          "sku": "333701",
+          "price": "70.38",
+          "compareAtPrice": "70.38",
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Low Sugar", "84 Packs"],
+          "sku": "333703",
+          "price": "211.14",
+          "compareAtPrice": "211.14",
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Sugar-Free", "28 Packs"],
+          "sku": "333702",
+          "price": "77.05",
+          "compareAtPrice": "77.05",
+          "inventoryQuantity": 0
+        },
+        {
+          "optionValues": ["Sugar-Free", "84 Packs"],
+          "sku": "333704",
+          "price": "231.15",
+          "compareAtPrice": "231.15",
+          "inventoryQuantity": 0
+        }
+      ],
+      "image": {
+        "source": "https://cdn.shopify.com/s/files/1/0550/9614/8034/files/firecracker_adults_ls_28_0ce4ee37-41fe-4fe0-9491-b5d8159766c4.webp?v=1783010534",
+        "alt": "Popsicle® Firecracker Grüns"
+      }
+    },
+    {
+      "sourceType": "real-mirror",
+      "sourceUrl": "https://gruns.co/products/gruns-kids",
+      "title": "Grüns Kids",
+      "handle": "gruns-kids",
+      "descriptionHtml": "<p>Cubs comprehensive daily nutrition in each life-hack snack pack of gummies. With 60 nutrient-dense ingredients, meeting your kid's daily nutrient needs, supporting gut health, and promoting whole-body vitality has never been so easy.</p>",
+      "vendor": "Grüns",
+      "productType": "Daily Nutrition",
+      "tags": ["333006", "333008", "kids", "primary", "case-study-real-mirror"],
+      "options": [
+        {
+          "name": "Sugar",
+          "values": ["Low Sugar", "Sugar-Free"]
+        },
+        {
+          "name": "Size",
+          "values": ["28 Packs", "84 Packs"]
+        }
+      ],
+      "variants": [
+        {
+          "optionValues": ["Low Sugar", "28 Packs"],
+          "sku": "333005",
+          "price": "53.32",
+          "compareAtPrice": "53.32",
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Low Sugar", "84 Packs"],
+          "sku": "333006",
+          "price": "159.96",
+          "compareAtPrice": "159.96",
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Sugar-Free", "28 Packs"],
+          "sku": "333007",
+          "price": "53.32",
+          "compareAtPrice": "53.32",
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Sugar-Free", "84 Packs"],
+          "sku": "333008",
+          "price": "159.96",
+          "compareAtPrice": "159.96",
+          "inventoryQuantity": 100
+        }
+      ],
+      "image": {
+        "source": "https://cdn.shopify.com/s/files/1/0550/9614/8034/files/og_kids_ls_28.webp?v=1783011586",
+        "alt": "Grüns Kids"
+      }
+    },
+    {
+      "sourceType": "real-mirror",
+      "sourceUrl": "https://gruns.co/products/gruns",
+      "title": "Grüns",
+      "handle": "gruns",
+      "descriptionHtml": "<p>Comprehensive daily nutrition in each life-hack snack pack of gummies. With 60 nutrient-dense ingredients, meeting your daily nutrient needs, supporting gut health, and promoting whole-body vitality has never been so easy.</p>",
+      "vendor": "Grüns",
+      "productType": "Daily Nutrition",
+      "tags": [
+        "333002",
+        "333004",
+        "adult",
+        "primary",
+        "case-study-real-mirror"
+      ],
+      "options": [
+        {
+          "name": "Sugar",
+          "values": ["Low Sugar", "Sugar-Free"]
+        },
+        {
+          "name": "Size",
+          "values": ["28 Packs", "84 Packs"]
+        }
+      ],
+      "variants": [
+        {
+          "optionValues": ["Low Sugar", "28 Packs"],
+          "sku": "333001",
+          "price": "66.65",
+          "compareAtPrice": "66.65",
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Low Sugar", "84 Packs"],
+          "sku": "333002",
+          "price": "199.95",
+          "compareAtPrice": "199.95",
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Sugar-Free", "28 Packs"],
+          "sku": "333003",
+          "price": "73.32",
+          "compareAtPrice": "73.32",
+          "inventoryQuantity": 100
+        },
+        {
+          "optionValues": ["Sugar-Free", "84 Packs"],
+          "sku": "333004",
+          "price": "219.96",
+          "compareAtPrice": "219.96",
+          "inventoryQuantity": 100
+        }
+      ],
+      "image": {
+        "source": "https://cdn.shopify.com/s/files/1/0550/9614/8034/files/og_adults_ls_28.webp?v=1783011543",
+        "alt": "Grüns"
+      }
+    },
+    {
+      "sourceType": "case-study-concept",
+      "title": "The Grü-Go Travel Tin",
+      "handle": "gru-go-travel-tin",
+      "descriptionHtml": "<p>A compact seven-day pouch carrier for flights, gym bags, work totes, and daily commutes. Case study concept; not a product currently sold by Grüns.</p>",
+      "vendor": "Grüns",
+      "productType": "Accessory",
+      "tags": [
+        "case-study-concept",
+        "complementary",
+        "adult",
+        "runner",
+        "travel"
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "values": ["Default Title"]
+        }
+      ],
+      "variants": [
+        {
+          "optionValues": ["Default Title"],
+          "sku": "CASE-TRAVEL-TIN",
+          "price": "18.00",
+          "compareAtPrice": null,
+          "inventoryQuantity": 100
+        }
+      ],
+      "image": {
+        "path": "assets/catalog/concepts/gru-go-travel-tin.png",
+        "alt": "Green Grüns travel tin with seven colorful daily compartments"
+      }
+    },
+    {
+      "sourceType": "case-study-concept",
+      "title": "Little Grüns Lunchbox",
+      "handle": "little-gruns-lunchbox",
+      "descriptionHtml": "<p>A bright insulated lunch bag for family routines, school days, and weekend outings. Case study concept; not a product currently sold by Grüns.</p>",
+      "vendor": "Grüns",
+      "productType": "Accessory",
+      "tags": [
+        "case-study-concept",
+        "complementary",
+        "kids",
+        "parent",
+        "family"
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "values": ["Default Title"]
+        }
+      ],
+      "variants": [
+        {
+          "optionValues": ["Default Title"],
+          "sku": "CASE-KIDS-LUNCH",
+          "price": "32.00",
+          "compareAtPrice": null,
+          "inventoryQuantity": 100
+        }
+      ],
+      "image": {
+        "path": "assets/catalog/concepts/little-gruns-lunchbox.png",
+        "alt": "Yellow and green Little Grüns insulated lunchbox"
+      }
+    },
+    {
+      "sourceType": "case-study-concept",
+      "title": "Good Greens Club Bottle",
+      "handle": "good-greens-club-bottle",
+      "descriptionHtml": "<p>A durable insulated water bottle for morning routines, gym sessions, and runs. Case study concept; not a product currently sold by Grüns.</p>",
+      "vendor": "Grüns",
+      "productType": "Accessory",
+      "tags": [
+        "case-study-concept",
+        "complementary",
+        "adult",
+        "runner",
+        "subscriber"
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "values": ["Default Title"]
+        }
+      ],
+      "variants": [
+        {
+          "optionValues": ["Default Title"],
+          "sku": "CASE-GREENS-BOTTLE",
+          "price": "28.00",
+          "compareAtPrice": null,
+          "inventoryQuantity": 100
+        }
+      ],
+      "image": {
+        "path": "assets/catalog/concepts/good-greens-club-bottle.png",
+        "alt": "Green Good Greens Club insulated water bottle"
+      }
+    },
+    {
+      "sourceType": "case-study-concept",
+      "title": "The Daily Ritual Tray",
+      "handle": "daily-ritual-tray",
+      "descriptionHtml": "<p>A ceramic catchall for tomorrow's pouch, keys, and watch on a kitchen counter or bedside table. Case study concept; not a product currently sold by Grüns.</p>",
+      "vendor": "Grüns",
+      "productType": "Home Accessory",
+      "tags": [
+        "case-study-concept",
+        "complementary",
+        "adult",
+        "routine",
+        "home"
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "values": ["Default Title"]
+        }
+      ],
+      "variants": [
+        {
+          "optionValues": ["Default Title"],
+          "sku": "CASE-RITUAL-TRAY",
+          "price": "24.00",
+          "compareAtPrice": null,
+          "inventoryQuantity": 100
+        }
+      ],
+      "image": {
+        "path": "assets/catalog/concepts/daily-ritual-tray.png",
+        "alt": "Green ceramic Daily Ritual Tray with yellow Grüns mark"
+      }
+    },
+    {
+      "sourceType": "case-study-ai-demo",
+      "title": "Grüns Run Club Bandana",
+      "handle": "gruns-run-club-bandana",
+      "descriptionHtml": "<p>A lightweight green bandana for run clubs, gym bags, and weekend hikes. Case study concept for demonstrating AI-assisted merchandising review; not a product currently sold by Grüns.</p>",
+      "vendor": "Grüns",
+      "productType": "Accessory",
+      "tags": [
+        "case-study-ai-demo",
+        "complementary",
+        "adult",
+        "runner",
+        "outdoors"
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "values": ["Default Title"]
+        }
+      ],
+      "variants": [
+        {
+          "optionValues": ["Default Title"],
+          "sku": "CASE-AI-BANDANA",
+          "price": "16.00",
+          "compareAtPrice": null,
+          "inventoryQuantity": 100
+        }
+      ]
+    },
+    {
+      "sourceType": "case-study-ai-demo",
+      "title": "Little Grüns Adventure Stickers",
+      "handle": "little-gruns-adventure-stickers",
+      "descriptionHtml": "<p>A colorful sticker sheet for lunchboxes, water bottles, and family adventure gear. Case study concept for demonstrating AI-assisted merchandising review; not a product currently sold by Grüns.</p>",
+      "vendor": "Grüns",
+      "productType": "Accessory",
+      "tags": [
+        "case-study-ai-demo",
+        "complementary",
+        "kids",
+        "parent",
+        "family"
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "values": ["Default Title"]
+        }
+      ],
+      "variants": [
+        {
+          "optionValues": ["Default Title"],
+          "sku": "CASE-AI-STICKERS",
+          "price": "8.00",
+          "compareAtPrice": null,
+          "inventoryQuantity": 100
+        }
+      ]
+    }
+  ],
+  "archiveHandles": [
+    "daily-bars",
+    "focus-bars",
+    "glow-bars",
+    "immune-bars",
+    "kids-bars",
+    "sleepy-bars"
+  ]
+}

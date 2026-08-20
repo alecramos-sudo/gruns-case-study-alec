@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grüns post-purchase system story</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --paper: #f7f5e9;
+        --paper-raised: #fffef7;
+        --ink: #173c2c;
+        --muted: #64746b;
+        --green: #006b3f;
+        --green-light: #dceee3;
+        --blue: #3d88a8;
+        --orange: #d97835;
+        --line: rgb(23 60 44 / 16%);
+        --line-strong: rgb(23 60 44 / 38%);
+        --shadow: 0 16px 40px rgb(23 60 44 / 8%);
+        --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+        --sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        background: var(--paper);
+      }
+
+      body {
+        min-height: 100vh;
+        min-width: 320px;
+        margin: 0;
+        background:
+          linear-gradient(var(--line) 1px, transparent 1px),
+          linear-gradient(90deg, var(--line) 1px, transparent 1px),
+          var(--paper);
+        background-size: 28px 28px;
+        color: var(--ink);
+        font-family: var(--sans);
+      }
+
+      button {
+        color: inherit;
+        font: inherit;
+      }
+
+      button:focus-visible,
+      [tabindex="0"]:focus-visible {
+        outline: 3px solid var(--blue);
+        outline-offset: 3px;
+      }
+
+      .shell {
+        width: 100%;
+        min-height: 100vh;
+      }
+
+      .scenario-button,
+      .node-state {
+        font-family: var(--mono);
+        text-transform: uppercase;
+        letter-spacing: 0.11em;
+      }
+
+      .story {
+        position: relative;
+        min-height: 100vh;
+      }
+
+      .story-bar {
+        position: fixed;
+        z-index: 10;
+        top: 20px;
+        left: 50%;
+        padding: 8px;
+        border: 1px solid var(--line-strong);
+        background: rgb(255 254 247 / 92%);
+        box-shadow: var(--shadow);
+        transform: translateX(-50%);
+        backdrop-filter: blur(12px);
+      }
+
+      .scenario-controls {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .scenario-button {
+        min-height: 42px;
+        padding: 10px 14px;
+        border: 1px solid var(--line-strong);
+        background: transparent;
+        cursor: pointer;
+        font-size: 10px;
+      }
+
+      .scenario-button[aria-pressed="true"] {
+        border-color: var(--green);
+        background: var(--green);
+        color: white;
+      }
+
+      .map-scroll {
+        min-height: 100vh;
+        overflow: auto;
+        padding: 84px 20px 20px;
+      }
+
+      .map {
+        position: relative;
+        width: 1180px;
+        min-height: 650px;
+        margin: 0 auto;
+      }
+
+      .zone {
+        position: absolute;
+        border: 1px dashed var(--line-strong);
+        background: rgb(220 238 227 / 22%);
+      }
+
+      .zone span {
+        position: absolute;
+        top: 12px;
+        left: 14px;
+        color: var(--muted);
+        font-family: var(--mono);
+        font-size: 10px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .zone.shopify {
+        inset: 20px 610px 20px 0;
+      }
+
+      .zone.app {
+        inset: 20px 0 20px 590px;
+        background: rgb(255 211 38 / 8%);
+      }
+
+      .paths {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+
+      .flow {
+        fill: none;
+        stroke: var(--line-strong);
+        stroke-width: 2;
+        stroke-dasharray: 6 7;
+        marker-end: url(#arrow-muted);
+        opacity: 0.28;
+        transition: opacity 180ms ease, stroke 180ms ease;
+      }
+
+      .flow.active {
+        stroke: var(--green);
+        stroke-width: 3;
+        marker-end: url(#arrow-active);
+        opacity: 1;
+        animation: travel 18s linear infinite;
+      }
+
+      .flow[data-scenario="merchant"].active {
+        stroke: var(--orange);
+        marker-end: url(#arrow-merchant);
+      }
+
+      @keyframes travel {
+        to {
+          stroke-dashoffset: -130;
+        }
+      }
+
+      .node {
+        position: absolute;
+        width: 156px;
+        height: 94px;
+        padding: 23px 18px 12px;
+        border: 1px solid var(--line-strong);
+        background: var(--paper-raised);
+        box-shadow: 11px 11px 0 rgb(23 60 44 / 11%);
+        cursor: pointer;
+        transform: skewY(-2deg);
+        transition: opacity 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+      }
+
+      .node::before {
+        position: absolute;
+        top: -13px;
+        right: 7px;
+        left: 7px;
+        height: 12px;
+        border: 1px solid var(--line-strong);
+        border-bottom: 0;
+        background: var(--green-light);
+        content: "";
+        transform: skewX(-38deg);
+        transform-origin: bottom;
+      }
+
+      .node::after {
+        position: absolute;
+        top: -7px;
+        right: -12px;
+        width: 11px;
+        height: 93px;
+        border: 1px solid var(--line-strong);
+        border-left: 0;
+        background: #bfd7c8;
+        content: "";
+        transform: skewY(-48deg);
+        transform-origin: left top;
+      }
+
+      .node:hover,
+      .node:focus-visible {
+        box-shadow: 14px 14px 0 rgb(0 107 63 / 17%);
+        transform: skewY(-2deg) translate(-2px, -2px);
+      }
+
+      .node.dim {
+        opacity: 0.34;
+      }
+
+      .node.active {
+        border-color: var(--green);
+        box-shadow: 12px 12px 0 rgb(0 107 63 / 20%);
+      }
+
+      .node[data-scenario~="merchant"].active::before {
+        background: #ffe49a;
+      }
+
+      .node-name {
+        display: block;
+        font-size: 15px;
+        font-weight: 750;
+        line-height: 1.1;
+      }
+
+      .node-state {
+        display: block;
+        margin-top: 8px;
+        color: var(--muted);
+        font-size: 8px;
+      }
+
+      .storefront { left: 44px; top: 112px; }
+      .signal { left: 254px; top: 112px; }
+      .metaobjects { left: 92px; top: 426px; }
+      .ai { left: 330px; top: 426px; }
+      .ranker { left: 512px; top: 264px; }
+      .extension { left: 730px; top: 112px; }
+      .ledger { left: 730px; top: 426px; }
+      .home { left: 968px; top: 264px; }
+
+      @media (max-width: 840px) {
+        .story-bar { top: 12px; }
+        .map-scroll { padding: 72px 14px 14px; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+          scroll-behavior: auto !important;
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      @media print {
+        body { background: white; }
+        .scenario-controls { display: none; }
+        .story-bar { display: none; }
+        .map-scroll { min-height: 0; overflow: visible; padding: 0; transform: scale(0.83); transform-origin: top left; height: 560px; }
+        .flow { opacity: 0.65; }
+        .node { opacity: 1 !important; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <section class="story" aria-label="Grüns post-purchase system map">
+        <div class="story-bar">
+          <div class="scenario-controls" aria-label="Choose a system flow">
+            <button class="scenario-button" data-mode="buyer" aria-pressed="false">
+              Buyer
+            </button>
+            <button class="scenario-button" data-mode="merchant" aria-pressed="false">
+              Merchant
+            </button>
+            <button class="scenario-button" data-mode="all" aria-pressed="true">
+              Both
+            </button>
+          </div>
+        </div>
+
+        <div class="map-scroll" role="region" aria-label="Interactive system map" tabindex="0">
+          <div class="map">
+            <div class="zone shopify"><span>Shopify platform</span></div>
+            <div class="zone app"><span>App services</span></div>
+
+            <svg class="paths" viewBox="0 0 1180 650" aria-hidden="true">
+              <defs>
+                <marker id="arrow-muted" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#64746b" /></marker>
+                <marker id="arrow-active" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#006b3f" /></marker>
+                <marker id="arrow-merchant" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#d97835" /></marker>
+              </defs>
+              <path class="flow" data-scenario="buyer" d="M 200 160 C 220 160, 230 160, 254 160" />
+              <path class="flow" data-scenario="buyer" d="M 410 160 C 470 160, 470 300, 512 310" />
+              <path class="flow" data-scenario="buyer" d="M 668 310 C 700 285, 700 165, 730 160" />
+              <path class="flow" data-scenario="buyer" d="M 808 206 C 808 290, 808 350, 808 426" />
+              <path class="flow" data-scenario="buyer" d="M 886 474 C 925 474, 945 365, 968 330" />
+              <path class="flow" data-scenario="merchant" d="M 968 310 C 900 260, 865 395, 808 426" />
+              <path class="flow" data-scenario="merchant" d="M 730 474 C 630 540, 500 474, 486 474" />
+              <path class="flow" data-scenario="merchant" d="M 330 474 C 285 474, 265 474, 248 474" />
+              <path class="flow" data-scenario="merchant" d="M 248 450 C 330 345, 425 320, 512 310" />
+            </svg>
+
+            <div class="node storefront" data-scenario="buyer" tabindex="0" role="button" aria-label="Storefront and Web Pixel">
+              <span class="node-name">Storefront + pixel</span>
+              <span class="node-state">Views + checkout token</span>
+            </div>
+            <div class="node signal" data-scenario="buyer" tabindex="0" role="button" aria-label="Checkout signal bridge">
+              <span class="node-name">Signal bridge</span>
+              <span class="node-state">Token → recent products</span>
+            </div>
+            <div class="node metaobjects" data-scenario="merchant" tabindex="0" role="button" aria-label="Shopify metaobjects">
+              <span class="node-name">Metaobjects</span>
+              <span class="node-state">Profiles · paths · policy</span>
+            </div>
+            <div class="node ai" data-scenario="merchant" tabindex="0" role="button" aria-label="AI drafting assistant">
+              <span class="node-name">AI drafts</span>
+              <span class="node-state">Propose · never publish</span>
+            </div>
+            <div class="node ranker" data-scenario="buyer merchant" tabindex="0" role="button" aria-label="Deterministic offer ranker">
+              <span class="node-name">Offer ranker</span>
+              <span class="node-state">Approved paths → winner</span>
+            </div>
+            <div class="node extension" data-scenario="buyer" tabindex="0" role="button" aria-label="Buyer post-purchase extension">
+              <span class="node-name">Buyer offer</span>
+              <span class="node-state">Calculate · sign · apply</span>
+            </div>
+            <div class="node ledger" data-scenario="buyer merchant" tabindex="0" role="button" aria-label="Bounded decision ledger">
+              <span class="node-name">Decision ledger</span>
+              <span class="node-state">Prepared → shown → outcome</span>
+            </div>
+            <div class="node home" data-scenario="merchant buyer" tabindex="0" role="button" aria-label="Shopify App Home">
+              <span class="node-name">App Home</span>
+              <span class="node-state">Manage · simulate · inspect</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const buttons = [...document.querySelectorAll("[data-mode]")];
+      const nodes = [...document.querySelectorAll(".node")];
+      const flows = [...document.querySelectorAll(".flow")];
+
+      function selectMode(mode) {
+        buttons.forEach((button) =>
+          button.setAttribute("aria-pressed", String(button.dataset.mode === mode)),
+        );
+        nodes.forEach((node) => {
+          const active = mode === "all" || node.dataset.scenario.split(" ").includes(mode);
+          node.classList.toggle("active", active);
+          node.classList.toggle("dim", !active);
+        });
+        flows.forEach((flow) => {
+          flow.classList.toggle(
+            "active",
+            mode === "all" || flow.dataset.scenario === mode,
+          );
+        });
+      }
+
+      buttons.forEach((button) =>
+        button.addEventListener("click", () => selectMode(button.dataset.mode)),
+      );
+      document.querySelectorAll('.node[role="button"]').forEach((node) => {
+        node.addEventListener("click", () =>
+          selectMode(node.dataset.scenario.split(" ")[0]),
+        );
+        node.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            const scenario = node.dataset.scenario.split(" ")[0];
+            selectMode(scenario);
+          }
+        });
+      });
+      selectMode("all");
+    </script>
+  </body>
+</html>

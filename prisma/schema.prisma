@@ -1,0 +1,104 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Note that some adapters may set a maximum length for the String type by default, please ensure your strings are long
+// enough when changing adapters.
+// See https://www.prisma.io/docs/orm/reference/prisma-schema-reference#string for more information
+datasource db {
+  provider = "sqlite"
+  url      = "file:dev.sqlite"
+}
+
+model Session {
+  id                  String    @id
+  shop                String
+  state               String
+  isOnline            Boolean   @default(false)
+  scope               String?
+  expires             DateTime?
+  accessToken         String
+  userId              BigInt?
+  firstName           String?
+  lastName            String?
+  email               String?
+  accountOwner        Boolean   @default(false)
+  locale              String?
+  collaborator        Boolean?  @default(false)
+  emailVerified       Boolean?  @default(false)
+  refreshToken        String?
+  refreshTokenExpires DateTime?
+}
+
+model CheckoutIntent {
+  id             String   @id @default(cuid())
+  shop           String
+  checkoutToken  String
+  recentlyViewed String
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@unique([shop, checkoutToken])
+  @@index([shop, updatedAt])
+}
+
+model OfferDecision {
+  id             String    @id @default(cuid())
+  shop           String
+  customerId     String?
+  referenceId    String
+  sourceHandle   String
+  offerHandle    String
+  offerVariantId String
+  score          Int
+  rationale      String
+  usedRecentView Boolean   @default(false)
+  recentViewMatch String   @default("none")
+  status         String    @default("prepared")
+  revenue        Float?
+  createdAt      DateTime  @default(now())
+  shownAt        DateTime?
+  acceptedAt     DateTime?
+  declinedAt     DateTime?
+  feedbackChoice String?
+  feedbackText   String?
+
+  @@unique([shop, referenceId])
+  @@index([shop, customerId])
+  @@index([shop, createdAt])
+  @@index([shop, status, createdAt])
+}
+
+model AiDailyUsage {
+  id                String   @id @default(cuid())
+  shop              String
+  date              String
+  runs              Int      @default(0)
+  inputTokens       Int      @default(0)
+  cachedInputTokens Int      @default(0)
+  outputTokens      Int      @default(0)
+  estimatedCostUsd  Float    @default(0)
+  lastProvider      String?
+  lastModel         String?
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  @@unique([shop, date])
+}
+
+model CustomerDataRequest {
+  id         String   @id @default(cuid())
+  shop       String
+  requestId  String
+  customerId String
+  data       String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@unique([shop, requestId])
+  @@index([shop, createdAt])
+  @@index([shop, customerId])
+}
